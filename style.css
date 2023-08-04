@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: rgb(37, 36, 36);
+    margin:10px;
+
+}
+
+.container {
+
+    border: 1px solid;
+    height: 530px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding:10px;
+
+}
+.container div {
+
+    border: 1px white solid;
+    width: 50rem;
+    /* flex-wrap:wrap; */
+    margin: 5px;
+    background-color:#00001a57;
+
+}
+
+.container .menu {
+
+    width:25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .musicClass {
+
+    width:25vw;
+}
