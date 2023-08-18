@@ -44,7 +44,8 @@ header div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+    position:fixed;
+    /* top: 0; */
     
 }
 .menu div {
@@ -65,6 +66,7 @@ header div {
 
     border: 1px solid;
     width: 70rem;
+    margin-left:15.3rem;
 }
 
 #navBtn {
