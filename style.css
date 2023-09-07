@@ -36,6 +36,12 @@ header div {
 
 }
 
+ .hamBurger {
+
+    width: 1rem;
+    display: none;
+}
+
 .container {
 
     border: 1px solid;
@@ -55,7 +61,6 @@ header div {
     justify-content: space-evenly;
     position:fixed;
     margin-top: 0.5rem;
-    /* top: 0; */
     
 }
 
@@ -169,105 +174,162 @@ font-weight:bold;
     margin-top: 5rem;
 }
 
+.musicList {
 
-.box {
-
+    /* background-color: gray; */
+    width: 70rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
-    background-color:black;
-    width: 30rem;
+    margin-top:1rem;
+    height:35rem;
+    color: white;
+}
+
+.artistList {
+
+    /* background-color: aquamarine; */
     display: flex;
-    border-radius: 3rem;
-    margin-top:2rem;
-    box-shadow:gainsboro 0px 0px 5px 0px;
+    padding: 1rem;
+    justify-content: space-between;
+
+}
+ 
+.artistList div {
+
+    /* background-color: cadetblue; */
+    width: 20rem;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
 
 
- }
+    .GenreInfo img {
 
-    .box div {
-
-        /* background-color: grey; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
-        margin: 2rem;
-        width: 25rem;
-        height: 20rem;
-        color: antiquewhite;
-
+        width: 15rem;
     }
 
-    div input {
-
-        width: 20rem;
-        padding: 0.6rem;
-        border-radius: 1rem;
-        border: none;
-    }
-
-   
-
-   
     
 /* RESPONSIVENESS */
 
 @media only screen and (max-width: 620px) {
     /* For mobile phones: */
-    header {
-      width: 100%;
-      background-color: aqua;
+
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+    
+    width: 100%;
+    background-color: black;
     }
 
-.menu {
-    display: none;
-}
 
-.container {
+    header {
+
+        background-color: rgb(19, 19, 51);
+        display: flex;
+        width: 100%;
+        height: 2rem;
+        
+        justify-content:space-around;
+        align-items: center;
+        position: -webkit-sticky; 
+        position: sticky;
+        top: 0;
+        border-bottom: 2px solid rgb(145, 143, 141);
+    }
+
+    .profile {
+
+        display: none;
+    }
+
+    .hamBurger {
+
+        width: 2rem;
+        display:block;
+        border: none;
+        border-radius: 0;
+    }
+
+    .logo {
+
+        width: 6rem;
+        text-align: center;
+
     
-    border: 1px solid;
-    margin: 2px;
-    display: flex;
-    justify-content: center;
-    background-color: gray;
+    }
+
+    .menu {
+
+        display: none;
+    }
+
+    .bar {
+
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #musicGenre  {
+
+        display:flex;
+        flex-direction: column;
+        height: 80rem;
+        /* margin-top: 25rem; */
+        font-weight:bold;
+         
+        }
+
+    #musicGenre div  {
+
+        background-color:rgb(26, 25, 24);
+        border:none;
+        width: 20rem;
+        height: 19rem;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        text-align: center;
+        font-weight:700;
+        font-size: 2rem;
+        border-radius: 2rem;
+        color: aliceblue;
+    }    
+
+    .musicGenre h3 {
+
+        text-align: center;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    #musicGenre div div {
+        width: 15rem;
+        height: 7rem;
+        border-radius:0rem;
+        text-align: center;   
+        
+     }
+
+     #musicGenre img {
+
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     #musicGenre div h4 {
+
+        text-align:center;
+
 }
-
-
-.bar {
-    display:flex;
-    flex-direction: column;
-    border: 1px solid;
-    width: 790px;
-    background-color: palevioletred;
-    /* margin-left: 15.3rem; */
-}
-.bar div {
-
-    width: 800px;
-    margin-right: auto;
-    margin-left: auto;
-
-    
-}
-header div {
-
-    background-color: rgb(108, 109, 110);
-    padding: 0.6rem;
-    width: 6rem;
-    justify-content: center;
-    display: flex;
-    color: aliceblue;
-    font-weight: 900;
-}
-header .search{
-    display: none;
-}
-
-#musicGenre {
-
-    /* display: none;  */
-} 
 }
